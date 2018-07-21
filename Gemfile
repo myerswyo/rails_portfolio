@@ -22,6 +22,36 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
+
+gem 'kaminari'
+
+gem 'faker'
+# For cool searches
+gem 'select2-rails'
+
+gem 'has_scope'
+# This gem is used for creating user tables and data
+
+# Use Redis adapter to run Action Cable in production
+# gem 'redis', '~> 4.0'
+# Use ActiveModel has_secure_password
+# gem 'bcrypt', '~> 3.1.7'
+
+# Use ActiveStorage variant
+# gem 'mini_magick', '~> 4.8'
+
+# Use Capistrano for deployment
+# gem 'capistrano-rails', group: :development
+# Reduces boot times through caching; required in config/boot.rb
+gem 'bootsnap', '>= 1.1.0', require: false
+# Devise, for user authentication
+gem 'devise'
+# Bootstrap, for basic layout and design
+gem 'bootstrap', '~> 4.1.1'
+# JQuery, for Bootstrap and site usability tweaks
+gem 'jquery-rails'
+# A Datepicker for Bootstrap, integrated with Rails assets pipeline
+gem 'bootstrap-datepicker-rails'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
@@ -33,8 +63,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-# Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '>= 1.1.0', require: false
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

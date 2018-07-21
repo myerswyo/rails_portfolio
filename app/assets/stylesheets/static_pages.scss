@@ -1,3 +1,141 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.jumbo{
+
+
+    height: 100vh;
+    width: 100vw;
+
+    background-image: url('Page Two.png');
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+
+
+.nabar{
+
+  position: fixed;
+
+}
+
+
+// footer
+
+%iconAdjustments{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    &:hover{
+      cursor: pointer;
+    }
+}
+
+
+// Classes
+
+.footerMainWrap{
+
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  position: relative;
+  background-color: #000;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+#socialMedia{
+  height: 100%;
+  width: 25%;
+  // border: 1px solid red;
+  display: flex;
+  justify-content: center;
+
+
+  .icon{
+    height: 50px;
+    width: 50px;
+      &:hover{
+        transform: rotateZ(33deg);
+      }
+    // background-color: white;
+    // border: 1px solid red;
+  }
+}
+
+// IDS
+
+#phoneNum{
+  font-family: "Philosopher";
+  font-size: 2.75em;
+  color: #FFF;
+  transition: 1s;
+  &:hover{
+    cursor: pointer;
+    color: #CC433C;
+    transition: 1s;
+  }
+}
+#socialMedia{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+
+}
+#fax{
+  font-family: "Philosopher";
+  font-size: 2.75em;
+  color: #FFF;
+  transition: 1s;
+  &:hover{
+    transition: 1s;
+    cursor: pointer;
+    color: #CC433C;
+  }
+}
+
+#facebook{
+  height: 100%;
+  width: 100%;
+  background-image: url("facebook.svg");
+  @extend %iconAdjustments;
+}
+#email{
+  height: 100%;
+  width: 100%;
+  background-image: url("email.svg");
+  @extend %iconAdjustments;
+}
+#twitter{
+  height: 100%;
+  width: 100%;
+  background-image: url("twitter.svg");
+  @extend %iconAdjustments;
+}
+#instagram{
+  height: 100%;
+  width: 100%;
+  background-image: url("instagram.svg");
+  @extend %iconAdjustments;
+}
+#location{
+  height: 100%;
+  width: 100%;
+  background-image: url("locate.svg");
+  @extend %iconAdjustments;
+}
+
+.navbar {
+  background-color: black;
+}
